@@ -18,7 +18,7 @@ Product bundle identifier:
 
 Callback and logout URL:
 
-> {PRODUCT_BUNDLE_IDENTIFIER}://dev-nbbojs57.us.auth0.com/ios/{PRODUCT_BUNDLE_IDENTIFIER}/callback
+> {PRODUCT_BUNDLE_IDENTIFIER}://{YOUR_ACCOUNT}.us.auth0.com/ios/{PRODUCT_BUNDLE_IDENTIFIER}/callback
 
 ## 3. Start authentication
 
