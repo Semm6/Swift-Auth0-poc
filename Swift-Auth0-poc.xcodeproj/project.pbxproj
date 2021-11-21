@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		96BAE464274AC90B000BF0E7 /* Swift_Auth0_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAE463274AC90B000BF0E7 /* Swift_Auth0_pocApp.swift */; };
-		96BAE466274AC90B000BF0E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAE465274AC90B000BF0E7 /* ContentView.swift */; };
+		96BAE466274AC90B000BF0E7 /* Homeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAE465274AC90B000BF0E7 /* Homeview.swift */; };
 		96BAE468274AC90C000BF0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BAE467274AC90C000BF0E7 /* Assets.xcassets */; };
 		96BAE46B274AC90C000BF0E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BAE46A274AC90C000BF0E7 /* Preview Assets.xcassets */; };
 		96BAE475274AC90C000BF0E7 /* Swift_Auth0_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAE474274AC90C000BF0E7 /* Swift_Auth0_pocTests.swift */; };
 		96BAE47F274AC90C000BF0E7 /* Swift_Auth0_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAE47E274AC90C000BF0E7 /* Swift_Auth0_pocUITests.swift */; };
 		96BAE481274AC90C000BF0E7 /* Swift_Auth0_pocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAE480274AC90C000BF0E7 /* Swift_Auth0_pocUITestsLaunchTests.swift */; };
+		96BAE494274AD2D7000BF0E7 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BAE493274AD2D7000BF0E7 /* Auth0.plist */; };
+		96BAE497274AD48E000BF0E7 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 96BAE496274AD48E000BF0E7 /* Auth0 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		96BAE460274AC90B000BF0E7 /* Swift-Auth0-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Auth0-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BAE463274AC90B000BF0E7 /* Swift_Auth0_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Auth0_pocApp.swift; sourceTree = "<group>"; };
-		96BAE465274AC90B000BF0E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96BAE465274AC90B000BF0E7 /* Homeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeview.swift; sourceTree = "<group>"; };
 		96BAE467274AC90C000BF0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96BAE46A274AC90C000BF0E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96BAE470274AC90C000BF0E7 /* Swift-Auth0-pocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Auth0-pocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,7 @@
 		96BAE47A274AC90C000BF0E7 /* Swift-Auth0-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Auth0-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BAE47E274AC90C000BF0E7 /* Swift_Auth0_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Auth0_pocUITests.swift; sourceTree = "<group>"; };
 		96BAE480274AC90C000BF0E7 /* Swift_Auth0_pocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Auth0_pocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96BAE493274AD2D7000BF0E7 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BAE497274AD48E000BF0E7 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,9 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				96BAE463274AC90B000BF0E7 /* Swift_Auth0_pocApp.swift */,
-				96BAE465274AC90B000BF0E7 /* ContentView.swift */,
+				96BAE465274AC90B000BF0E7 /* Homeview.swift */,
 				96BAE467274AC90C000BF0E7 /* Assets.xcassets */,
 				96BAE469274AC90C000BF0E7 /* Preview Content */,
+				96BAE493274AD2D7000BF0E7 /* Auth0.plist */,
 			);
 			path = "Swift-Auth0-poc";
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = "Swift-Auth0-poc";
+			packageProductDependencies = (
+				96BAE496274AD48E000BF0E7 /* Auth0 */,
+			);
 			productName = "Swift-Auth0-poc";
 			productReference = 96BAE460274AC90B000BF0E7 /* Swift-Auth0-poc.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 96BAE457274AC90B000BF0E7;
+			packageReferences = (
+				96BAE495274AD48E000BF0E7 /* XCRemoteSwiftPackageReference "Auth0.swift" */,
+			);
 			productRefGroup = 96BAE461274AC90B000BF0E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BAE46B274AC90C000BF0E7 /* Preview Assets.xcassets in Resources */,
+				96BAE494274AD2D7000BF0E7 /* Auth0.plist in Resources */,
 				96BAE468274AC90C000BF0E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96BAE466274AC90B000BF0E7 /* ContentView.swift in Sources */,
+				96BAE466274AC90B000BF0E7 /* Homeview.swift in Sources */,
 				96BAE464274AC90B000BF0E7 /* Swift_Auth0_pocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96BAE495274AD48E000BF0E7 /* XCRemoteSwiftPackageReference "Auth0.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96BAE496274AD48E000BF0E7 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96BAE495274AD48E000BF0E7 /* XCRemoteSwiftPackageReference "Auth0.swift" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96BAE458274AC90B000BF0E7 /* Project object */;
 }

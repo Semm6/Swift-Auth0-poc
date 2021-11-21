@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Swift_Auth0_pocApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Homeview()
         }
     }
 }
+
